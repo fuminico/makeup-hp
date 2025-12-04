@@ -9,9 +9,9 @@ import { Menu, X, ChevronRight } from "lucide-react";
 import { cn, getImagePath } from "@/lib/utils";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/services" },
-  { name: "Company", href: "/company" },
+  { name: "トップページ", href: "/" },
+  { name: "サービス概要", href: "/services" },
+  { name: "会社概要", href: "/company" },
 ];
 
 export const Header = () => {
