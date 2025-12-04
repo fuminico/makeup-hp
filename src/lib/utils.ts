@@ -6,11 +6,10 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /**
- * Get the correct image path with basePath prefix for GitHub Pages
+ * Get the correct image path - Next.js automatically handles basePath
  * @param path - The image path starting with /
- * @returns The full path with basePath if in production
+ * @returns The path as-is (Next.js will add basePath automatically)
  */
 export function getImagePath(path: string): string {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  return `${basePath}${path}`;
+  return path;
 }
