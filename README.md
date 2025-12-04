@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 株式会社メイクアップ コーポレートサイト リニューアルプロジェクト
 
-## Getting Started
+このプロジェクトは、株式会社メイクアップのコーポレートサイトをリニューアルするためのものです。
+既存のサイト（[prime-yi.jp](https://prime-yi.jp/)）のコンテンツをベースに、4つの主要事業をより詳細に紹介し、プレミアムでモダンなデザインへと刷新します。
 
-First, run the development server:
+## プロジェクトの目的
+
+- **コンテンツの拡充**: 「WEBシステム開発」「営業代理」「コンサルティング」「コンテンツ制作」の4つの事業の柱を、それぞれ独立した詳細ページとして展開します。
+- **デザインの刷新**: 信頼感と先進性を兼ね備えた「プレミアム・モダン」なデザインを採用し、ブランドイメージを向上させます。
+- **ユーザー体験の向上**: 最新のWeb技術（Next.js）を使用し、高速で快適な閲覧体験を提供します。
+
+## 技術スタック
+
+- **フレームワーク**: [Next.js 15](https://nextjs.org/) (App Router)
+- **言語**: [TypeScript](https://www.typescriptlang.org/)
+- **スタイリング**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **UIコンポーネント**: [Lucide React](https://lucide.dev/) (アイコン), [Framer Motion](https://www.framer.com/motion/) (アニメーション)
+
+## ディレクトリ構造
+
+```
+src/
+├── app/          # ページコンポーネントとルーティング
+├── components/   # 再利用可能なUIコンポーネント
+│   ├── layout/   # ヘッダー、フッターなどのレイアウト部品
+│   └── ui/       # ボタン、カードなどの基本UI部品
+├── lib/          # ユーティリティ関数など
+└── public/       # 静的アセット（画像など）
+```
+
+## 開発の始め方
+
+開発サーバーを起動するには、以下のコマンドを実行してください。
 
 ```bash
 npm run dev
-# or
+# または
 yarn dev
-# or
+# または
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開くと、結果を確認できます。

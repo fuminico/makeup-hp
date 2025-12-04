@@ -1,0 +1,125 @@
+﻿======================================================================
+Image Generation for Makeup HP - Service Hero Images
+Using Vertex AI Imagen API
+======================================================================
+API Key: AIzaSyBn13MSYkSTAak-...
+Total images to generate: 4
+======================================================================
+
+笞 IMPORTANT: This script requires PROJECT_ID to be set.
+笞 Please edit this file and replace YOUR_PROJECT_ID with your actual GCP project ID.
+笞 Alternatively, trying Gemini API first...
+
+[1/4] Generating: service-consulting.png
+Prompt: A professional business consulting meeting in a modern Japanese office. Japanese business profession...
+
+Requesting Gemini API...
+Response status: 400
+node : Error response: {
+発生場所 行:1 文字:1
++ node generate-vertex.js 2>&1 | Out-File -Fil
+ePath output.txt -Encodin ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ( 
+   Error response: {:String) [], RemoteExcep  
+  tion
+    + FullyQualifiedErrorId : NativeCommandEr 
+   ror
+ 
+  "error": {
+    "code": 400,
+    "message": "* GenerateContentRequest.gener
+ation_config.response_mime_type: allowed mimet
+ypes are `text/plain`, `application/json`, `ap
+plication/xml`, `application/yaml` and `text/x
+.enum`.\n",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+笨・Error generating service-consulting.png: API
+ request failed with status 400
+
+Waiting 2 seconds before next request...
+
+[2/4] Generating: service-content.png
+Prompt: Japanese content creators working in a modern creative studio. Men and women using professional came...
+
+Requesting Gemini API...
+Response status: 400
+Error response: {
+  "error": {
+    "code": 400,
+    "message": "* GenerateContentRequest.gener
+ation_config.response_mime_type: allowed mimet
+ypes are `text/plain`, `application/json`, `ap
+plication/xml`, `application/yaml` and `text/x
+.enum`.\n",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+笨・Error generating service-content.png: API re
+quest failed with status 400
+
+Waiting 2 seconds before next request...
+
+[3/4] Generating: service-development.png
+Prompt: Japanese software developers coding in a modern tech office. Men and women working on computers with...
+
+Requesting Gemini API...
+Response status: 400
+Error response: {
+  "error": {
+    "code": 400,
+    "message": "* GenerateContentRequest.gener
+ation_config.response_mime_type: allowed mimet
+ypes are `text/plain`, `application/json`, `ap
+plication/xml`, `application/yaml` and `text/x
+.enum`.\n",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+笨・Error generating service-development.png: AP
+I request failed with status 400
+
+Waiting 2 seconds before next request...
+
+[4/4] Generating: service-sales.png
+Prompt: Japanese sales team in a business meeting. Professional men and women in suits presenting with lapto...
+
+Requesting Gemini API...
+Response status: 400
+Error response: {
+  "error": {
+    "code": 400,
+    "message": "* GenerateContentRequest.gener
+ation_config.response_mime_type: allowed mimet
+ypes are `text/plain`, `application/json`, `ap
+plication/xml`, `application/yaml` and `text/x
+.enum`.\n",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+笨・Error generating service-sales.png: API requ
+est failed with status 400
+
+======================================================================
+Image Generation Process Complete
+======================================================================
+笨・Success: 0
+笨・Failed: 4
+======================================================================
+
+CONCLUSION:
+The provided API key is for Gemini API (text generation).
+Image generation requires one of the following:
+1. Vertex AI Imagen API with proper project setup
+2. Service account credentials (not API key)
+3. Alternative image generation service (DALL-E, Midjourney, etc.)
+
+RECOMMENDED ACTION:
+Download images from free stock photo sites (Unsplash, Pexels, 蜀咏悄AC)
+Search keywords: "japanese business meeting", "japanese office", etc.

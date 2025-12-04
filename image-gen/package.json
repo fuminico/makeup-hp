@@ -1,0 +1,14 @@
+{
+  "name": "image-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Generate service hero images using Gemini 3 Pro Image Preview",
+  "main": "generate-final.mjs",
+  "scripts": {
+    "generate": "node generate-final.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.0",
+    "node-fetch": "^3.3.0"
+  }
+}
