@@ -10,7 +10,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "株式会社メイクアップ",
+  title: "株式会社メイクアップ | ビジネスの可能性を最大化",
   description: "WEBシステム開発、営業代行、コンサルティング、コンテンツ制作",
 };
 

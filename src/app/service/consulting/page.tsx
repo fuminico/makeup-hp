@@ -45,7 +45,7 @@ export default function ConsultingPage() {
             <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10 leading-relaxed">
               机上の空論はいらない。<br />
               現場に入り込み、共に汗をかき、成果が出るまで伴走する。<br />
-              それがメイクアップのコンサルティングスタイルです。
+              それが当社のコンサルティングスタイルです。
             </p>
             <Link
               href="/contact"
@@ -76,7 +76,7 @@ export default function ConsultingPage() {
                 現代のビジネス環境はかつてないスピードで変化しています。過去の成功体験が通用しない今、経営者は常に難しい決断を迫られています。
               </p>
               <p>
-                株式会社メイクアップのコンサルティングは、単にレポートを提出して終わりではありません。私たちは貴社の「社外No.2」として、現場の社員を巻き込みながら実行を支援し、組織全体が変わるまで粘り強く伴走します。「絵に描いた餅」で終わらせない、実践的なコンサルティングをお約束します。
+                当社のコンサルティングは、単にレポートを提出して終わりではありません。私たちは貴社の「社外No.2」として、現場の社員を巻き込みながら実行を支援し、組織全体が変わるまで粘り強く伴走します。「絵に描いた餅」で終わらせない、実践的なコンサルティングをお約束します。
               </p>
               <p>
                 現状の課題を徹底的に分析し、あるべき姿を描き、そこに至るまでのロードマップを策定します。KPI（重要業績評価指標）を設定し、定量的に効果を測定しながらPDCAサイクルを高速で回します。
@@ -108,7 +108,7 @@ export default function ConsultingPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Our Style</h2>
-            <p className="text-slate-600">メイクアップのコンサルティングの特徴</p>
+            <p className="text-slate-600">当社のコンサルティングの特徴</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

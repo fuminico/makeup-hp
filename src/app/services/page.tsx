@@ -53,7 +53,7 @@ export default function ServicesPage() {
             あらゆる角度からサポート
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            株式会社メイクアップは、WEBシステム開発、営業代行、コンサルティング、コンテンツ制作の4つの専門サービスを提供しています。
+            当社は、WEBシステム開発、営業代行、コンサルティング、コンテンツ制作の4つの専門サービスを提供しています。
             それぞれの分野のプロフェッショナルが連携し、お客様のビジネス課題を総合的に解決します。
           </p>
         </motion.div>
@@ -270,7 +270,7 @@ export default function ServicesPage() {
       <section className="py-24 container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900 text-center">
-            メイクアップが選ばれる理由
+            当社が選ばれる理由
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">

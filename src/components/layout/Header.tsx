@@ -42,7 +42,7 @@ export const Header = () => {
         <Link href="/" className="relative z-50 flex items-center gap-3 group">
           <Image
             src={getImagePath("/images/logo.png")}
-            alt="株式会社メイクアップ"
+            alt="当社ロゴ"
             width={240}
             height={80}
             className="h-20 w-auto object-contain"
