@@ -50,7 +50,7 @@ export default function ServicesPage() {
             あらゆる角度からサポート
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            株式会社メイクアップは、WEBシステム開発、営業代理、コンサルティング、コンテンツ制作の4つの専門サービスを提供しています。
+            株式会社メイクアップは、WEBシステム開発、営業代行、コンサルティング、コンテンツ制作の4つの専門サービスを提供しています。
             それぞれの分野のプロフェッショナルが連携し、お客様のビジネス課題を総合的に解決します。
           </p>
         </motion.div>
@@ -110,7 +110,7 @@ export default function ServicesPage() {
               </motion.div>
             </Link>
 
-            {/* 営業代理 */}
+            {/* 営業代行 */}
             <Link href="/service/sales">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                 <div className="relative h-64 overflow-hidden">
                   <Image
                     src="/images/hero-sales-jp.jpg"
-                    alt="営業代理"
+                    alt="営業代行"
                     fill
                     className="object-cover"
                   />
@@ -131,7 +131,7 @@ export default function ServicesPage() {
                     <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4">
                       <TrendingUp size={28} />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">営業代理</h3>
+                    <h3 className="text-2xl font-bold text-white">営業代行</h3>
                   </div>
                 </div>
                 <div className="p-8">

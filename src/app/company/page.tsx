@@ -145,7 +145,7 @@ export default function CompanyPage() {
                   <div className="px-8 py-6 md:w-2/3">
                     <div className="text-slate-700 space-y-2">
                       <p>・WEBシステム開発</p>
-                      <p>・営業代理業</p>
+                      <p>・営業代行業</p>
                       <p>・コンサルティング</p>
                       <p>・コンテンツ制作</p>
                     </div>

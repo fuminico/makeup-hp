@@ -57,7 +57,7 @@ export function Footer() {
               <li>
                 <Link href="/service/sales" className="text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-2 group">
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                  営業代理
+                  営業代行
                 </Link>
               </li>
               <li>

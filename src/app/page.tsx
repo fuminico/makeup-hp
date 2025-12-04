@@ -121,7 +121,7 @@ export default function Home() {
               </motion.div>
             </Link>
 
-            {/* 営業代理 */}
+            {/* 営業代行 */}
             <Link href="/service/sales">
               <motion.div
                 whileHover={{ y: -8, boxShadow: "0 25px 50px -12px rgba(168, 85, 247, 0.25)" }}
@@ -130,7 +130,7 @@ export default function Home() {
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src="/images/hero-sales-jp.jpg"
-                    alt="営業代理"
+                    alt="営業代行"
                     fill
                     className="object-cover"
                   />
@@ -140,7 +140,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-4 text-slate-900">営業代理</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-slate-900">営業代行</h3>
                   <p className="text-slate-600 leading-relaxed mb-6">
                     「良い商品なのに売れない」を終わらせる。戦略立案から実行まで、プロフェッショナルが貴社の売上を最大化します。
                   </p>

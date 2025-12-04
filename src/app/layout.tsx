@@ -11,7 +11,7 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "株式会社メイクアップ",
-  description: "WEBシステム開発、営業代理、コンサルティング、コンテンツ制作",
+  description: "WEBシステム開発、営業代行、コンサルティング、コンテンツ制作",
 };
 
 export default function RootLayout({

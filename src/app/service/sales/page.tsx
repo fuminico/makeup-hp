@@ -73,7 +73,7 @@ export default function SalesPage() {
                 素晴らしいプロダクトも、顧客に届けられなければビジネスは成功しません。多くの企業が「営業人材の採用難」「教育コストの増大」「属人化」といった課題に直面しています。
               </p>
               <p>
-                当社の営業代理サービスは、単なる「人貸し」ではありません。市場調査、ターゲット選定、トークスクリプトの作成から商談・クロージングまで一気通貫でサポートします。営業は科学です。データに基づいた仮説検証を繰り返し、再現性のある勝ちパターンを確立します。
+                当社の営業代行サービスは、単なる「人貸し」ではありません。市場調査、ターゲット選定、トークスクリプトの作成から商談・クロージングまで一気通貫でサポートします。営業は科学です。データに基づいた仮説検証を繰り返し、再現性のある勝ちパターンを確立します。
               </p>
             </div>
           </motion.div>
@@ -102,7 +102,7 @@ export default function SalesPage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Why Us?</h2>
-            <p className="text-slate-600">当社の営業代理が選ばれる3つの理由</p>
+            <p className="text-slate-600">当社の営業代行が選ばれる3つの理由</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -142,7 +142,7 @@ export default function SalesPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-slate-900">成功事例の背景</h2>
             <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
               <p>
-                当社の営業代理サービスが成果を出せる理由は、マーケティング、心理学、データ分析など複合的なスキルを持つチームが科学的なアプローチで営業活動を設計しているからです。単に数字を作るだけでなく、貴社に「勝ちパターン」を残すことを大切にしています。
+                当社の営業代行サービスが成果を出せる理由は、マーケティング、心理学、データ分析など複合的なスキルを持つチームが科学的なアプローチで営業活動を設計しているからです。単に数字を作るだけでなく、貴社に「勝ちパターン」を残すことを大切にしています。
               </p>
             </div>
           </div>
