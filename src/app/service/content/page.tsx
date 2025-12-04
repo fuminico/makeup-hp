@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,7 +8,6 @@ import {
   Image as ImageIcon, Edit3, Play, Layers,
   Monitor, Smartphone, Mic, Aperture, Palette, TrendingUp
 } from "lucide-react";
-import { getImagePath } from "@/lib/utils";
 
 export default function ContentPage() {
   return (
@@ -17,7 +16,7 @@ export default function ContentPage() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src={getImagePath("/images/hero-content-jp.jpg")}
+            src={"/images/hero-content-jp.jpg"}
             alt="コンテンツ制作サービス"
             fill
             className="object-cover opacity-60"
@@ -91,7 +90,7 @@ export default function ContentPage() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
               <Image
-                src={getImagePath("/images/content-production-jp.jpg")}
+                src={"/images/content-production-jp.jpg"}
                 alt="コンテンツ制作現場の様子"
                 width={1200}
                 height={900}

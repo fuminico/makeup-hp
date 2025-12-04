@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -6,7 +6,6 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { getImagePath } from "@/lib/utils";
 
 const navigation = [
   { name: "ホーム", href: "/" },
@@ -41,7 +40,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="relative z-50 flex items-center gap-3 group">
           <Image
-            src={getImagePath("/images/logo.png")}
+            src={"/images/logo.png"}
             alt="株式会社メイクアップ"
             width={240}
             height={80}

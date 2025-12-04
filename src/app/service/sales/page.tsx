@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,7 +8,6 @@ import {
   Mail, Target, BarChart2, PieChart, Award,
   Briefcase, MessageCircle, Globe
 } from "lucide-react";
-import { getImagePath } from "@/lib/utils";
 
 export default function SalesPage() {
   return (
@@ -17,7 +16,7 @@ export default function SalesPage() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src={getImagePath("/images/hero-sales-jp.jpg")}
+            src={"/images/hero-sales-jp.jpg"}
             alt="Sales Agency Service"
             fill
             className="object-cover opacity-60"
@@ -87,7 +86,7 @@ export default function SalesPage() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
               <Image
-                src={getImagePath("/images/sales-presentation-jp.jpg")}
+                src={"/images/sales-presentation-jp.jpg"}
                 alt="営業プレゼンテーション"
                 width={1200}
                 height={900}

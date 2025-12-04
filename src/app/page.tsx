@@ -1,10 +1,9 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Code, TrendingUp, Users, Video } from "lucide-react";
-import { getImagePath } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src={getImagePath("/images/hero-home.jpg")}
+            src={"/images/hero-home.jpg"}
             alt="ビジネスの可能性を最大化する"
             fill
             className="object-cover opacity-40"
@@ -99,7 +98,7 @@ export default function Home() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={getImagePath("/images/hero-dev-jp.jpg")}
+                    src={"/images/hero-dev-jp.jpg"}
                     alt="WEBシステム開発"
                     fill
                     className="object-cover"
@@ -130,7 +129,7 @@ export default function Home() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={getImagePath("/images/hero-sales-jp.jpg")}
+                    src={"/images/hero-sales-jp.jpg"}
                     alt="営業代行"
                     fill
                     className="object-cover"
@@ -161,7 +160,7 @@ export default function Home() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={getImagePath("/images/hero-consulting-jp.jpg")}
+                    src={"/images/hero-consulting-jp.jpg"}
                     alt="コンサルティング"
                     fill
                     className="object-cover"
@@ -192,7 +191,7 @@ export default function Home() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={getImagePath("/images/hero-content-jp.jpg")}
+                    src={"/images/hero-content-jp.jpg"}
                     alt="コンテンツ制作"
                     fill
                     className="object-cover"

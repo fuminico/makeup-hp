@@ -1,10 +1,9 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MapPin, Mail, User, Calendar, DollarSign, Briefcase } from "lucide-react";
-import { getImagePath } from "@/lib/utils";
 
 export default function CompanyPage() {
   return (
@@ -13,7 +12,7 @@ export default function CompanyPage() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src={getImagePath("/images/hero-company.jpg")}
+            src={"/images/hero-company.jpg"}
             alt="会社概要"
             fill
             className="object-cover opacity-60"
