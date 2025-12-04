@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -116,15 +116,13 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-slate-400">
                 <MapPin className="text-pink-500 mt-1 shrink-0" size={18} />
-                <span>〒100-0000<br />東京都千代田区...</span>
+                <span>福岡市早良区百道一丁目1番</span>
               </li>
-              <li className="flex items-center gap-3 text-slate-400">
-                <Phone className="text-pink-500 shrink-0" size={18} />
-                <span>03-0000-0000</span>
-              </li>
-              <li className="flex items-center gap-3 text-slate-400">
-                <Mail className="text-pink-500 shrink-0" size={18} />
-                <span>info@prime-yi.jp</span>
+              <li>
+                <Link href="/contact" className="flex items-center gap-3 text-slate-400 hover:text-pink-400 transition-colors group">
+                  <Mail className="text-pink-500 shrink-0 group-hover:text-pink-400 transition-colors" size={18} />
+                  <span>お問い合わせフォーム</span>
+                </Link>
               </li>
             </ul>
           </div>

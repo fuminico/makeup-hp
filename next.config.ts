@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: '/makeup-hp',
+  assetPrefix: '/makeup-hp',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
