@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, ChevronRight } from "lucide-react";
+import { cn, getImagePath } from "@/lib/utils";
 
 const navigation = [
-  { name: "ホーム", href: "/" },
-  { name: "サービス概要", href: "/services" },
-  { name: "会社概要", href: "/company" },
+  { name: "Home", href: "/" },
+  { name: "Services", href: "/services" },
+  { name: "Company", href: "/company" },
 ];
 
 export const Header = () => {

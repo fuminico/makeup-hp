@@ -1,9 +1,12 @@
 ﻿"use client";
 
-import { motion } from "framer-motion";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { Briefcase, MapPin, User, Calendar, DollarSign, Mail, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MapPin, Mail, User, Calendar, DollarSign, Briefcase } from "lucide-react";
+import { motion } from "framer-motion";
+import { getImagePath } from "@/lib/utils";
 
 export default function CompanyPage() {
   return (
@@ -12,7 +15,7 @@ export default function CompanyPage() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src={"/images/hero-company.jpg"}
+            src={getImagePath("/images/hero-company.jpg")}
             alt="会社概要"
             fill
             className="object-cover opacity-60"
@@ -35,10 +38,10 @@ export default function CompanyPage() {
             </p>
           </motion.div>
         </div>
-      </section>
+      </section >
 
       {/* Company Philosophy */}
-      <section className="py-24 container mx-auto px-4">
+      < section className="py-24 container mx-auto px-4" >
         <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -69,10 +72,10 @@ export default function CompanyPage() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </section >
 
       {/* Company Information */}
-      <section className="py-24 bg-slate-50">
+      < section className="py-24 bg-slate-50" >
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900 text-center">
@@ -155,10 +158,10 @@ export default function CompanyPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* CTA Section */}
-      <section className="py-24 bg-blue-600">
+      < section className="py-24 bg-blue-600" >
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             お気軽にお問い合わせください
@@ -174,7 +177,7 @@ export default function CompanyPage() {
             お問い合わせ <ArrowRight size={20} />
           </Link>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }

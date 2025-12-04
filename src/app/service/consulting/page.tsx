@@ -1,13 +1,15 @@
 ﻿"use client";
 
-import { motion } from "framer-motion";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import {
-  ArrowRight, CheckCircle, Lightbulb, TrendingUp,
-  Users, Settings, Target, Compass, BarChart,
-  Briefcase, Search, FileText, RefreshCw
+  ArrowRight, Users, Lightbulb, TrendingUp, CheckCircle,
+  Settings, Target, BarChart2, MessageCircle, Compass
 } from "lucide-react";
+import { getImagePath } from "@/lib/utils";
 
 export default function ConsultingPage() {
   return (
@@ -16,7 +18,7 @@ export default function ConsultingPage() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src={"/images/hero-consulting-jp.jpg"}
+            src={getImagePath("/images/hero-consulting-jp.jpg")}
             alt="コンサルティングサービス"
             fill
             className="object-cover opacity-60"
@@ -90,7 +92,7 @@ export default function ConsultingPage() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
               <Image
-                src={"/images/consulting-workshop-jp.jpg"}
+                src={getImagePath("/images/consulting-workshop-jp.jpg")}
                 alt="コンサルティングワークショップの様子"
                 width={1200}
                 height={900}

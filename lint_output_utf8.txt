@@ -1,0 +1,166 @@
+﻿
+> makeup-hp@0.1.0 lint
+> eslint
+
+
+C:\Develop\makeup-hp\count-text.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Develop\makeup-hp\image-gen\generate-final.mjs
+  123:14  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Develop\makeup-hp\image-gen\generate-vertex.js
+    1:15  error    A `require()` style import is forbidden              @typescript-eslint/no-require-imports
+    2:12  error    A `require()` style import is forbidden              @typescript-eslint/no-require-imports
+    3:14  error    A `require()` style import is forbidden              @typescript-eslint/no-require-imports
+   28:16  warning  'generateImageWithImagen' is defined but never used  @typescript-eslint/no-unused-vars
+  150:16  warning  'saveImage' is defined but never used                @typescript-eslint/no-unused-vars
+
+C:\Develop\makeup-hp\image-gen\generate.js
+  1:15  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  3:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Develop\makeup-hp\scripts\generate-images-imagen.js
+   1:15  error    A `require()` style import is forbidden              @typescript-eslint/no-require-imports
+   2:12  error    A `require()` style import is forbidden              @typescript-eslint/no-require-imports
+   3:14  error    A `require()` style import is forbidden              @typescript-eslint/no-require-imports
+  18:16  warning  'generateImageWithImagen' is defined but never used  @typescript-eslint/no-unused-vars
+  73:16  warning  'saveImage' is defined but never used                @typescript-eslint/no-unused-vars
+
+C:\Develop\makeup-hp\scripts\generate-images.js
+   1:15  error    A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+   2:12  error    A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+   3:14  error    A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  75:16  warning  'saveImage' is defined but never used    @typescript-eslint/no-unused-vars
+
+C:\Develop\makeup-hp\src\app\company\page.tsx
+  1:8  error  Parsing error: JSX expressions must have one parent element
+
+C:\Develop\makeup-hp\src\app\page.tsx
+  3:10  warning  'Header' is defined but never used        @typescript-eslint/no-unused-vars
+  4:10  warning  'Footer' is defined but never used        @typescript-eslint/no-unused-vars
+  5:22  warning  'CheckCircle' is defined but never used   @typescript-eslint/no-unused-vars
+  5:60  warning  'Zap' is defined but never used           @typescript-eslint/no-unused-vars
+  9:10  warning  'getImagePath' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Develop\makeup-hp\src\app\service\consulting\page.tsx
+    8:12  error  'Image' is not defined        react/jsx-no-undef
+   19:12  error  'motion' is not defined       react/jsx-no-undef
+   38:14  error  'Link' is not defined         react/jsx-no-undef
+   42:25  error  'ArrowRight' is not defined   react/jsx-no-undef
+   51:12  error  'motion' is not defined       react/jsx-no-undef
+   75:12  error  'motion' is not defined       react/jsx-no-undef
+   82:16  error  'Image' is not defined        react/jsx-no-undef
+  158:18  error  'Lightbulb' is not defined    react/jsx-no-undef
+  168:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  169:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  170:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  178:18  error  'TrendingUp' is not defined   react/jsx-no-undef
+  188:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  189:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  190:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  198:18  error  'Users' is not defined        react/jsx-no-undef
+  208:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  209:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  210:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  218:18  error  'Settings' is not defined     react/jsx-no-undef
+  228:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  229:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  230:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  283:12  error  'Link' is not defined         react/jsx-no-undef
+
+C:\Develop\makeup-hp\src\app\service\content\page.tsx
+    8:12  error  'Image' is not defined        react/jsx-no-undef
+   19:12  error  'motion' is not defined       react/jsx-no-undef
+   38:14  error  'Link' is not defined         react/jsx-no-undef
+   42:25  error  'ArrowRight' is not defined   react/jsx-no-undef
+   51:12  error  'motion' is not defined       react/jsx-no-undef
+   75:12  error  'motion' is not defined       react/jsx-no-undef
+   82:16  error  'Image' is not defined        react/jsx-no-undef
+  120:18  error  'Video' is not defined        react/jsx-no-undef
+  130:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  131:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  132:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  140:18  error  'Monitor' is not defined      react/jsx-no-undef
+  150:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  151:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  152:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  160:18  error  'ImageIcon' is not defined    react/jsx-no-undef
+  170:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  171:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  172:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  180:18  error  'Edit3' is not defined        react/jsx-no-undef
+  190:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  191:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  192:71  error  'CheckCircle' is not defined  react/jsx-no-undef
+  293:12  error  'Link' is not defined         react/jsx-no-undef
+
+C:\Develop\makeup-hp\src\app\service\development\page.tsx
+    8:12  error  'Image' is not defined         react/jsx-no-undef
+   19:12  error  'motion' is not defined        react/jsx-no-undef
+   37:14  error  'Link' is not defined          react/jsx-no-undef
+   41:25  error  'ArrowRight' is not defined    react/jsx-no-undef
+   50:12  error  'motion' is not defined        react/jsx-no-undef
+   71:12  error  'motion' is not defined        react/jsx-no-undef
+   78:16  error  'Image' is not defined         react/jsx-no-undef
+  103:20  error  'BarChart' is not defined      react/jsx-no-undef
+  118:22  error  'CheckCircle' is not defined   react/jsx-no-undef
+  129:20  error  'Globe' is not defined         react/jsx-no-undef
+  144:22  error  'CheckCircle' is not defined   react/jsx-no-undef
+  155:20  error  'ShoppingCart' is not defined  react/jsx-no-undef
+  170:22  error  'CheckCircle' is not defined   react/jsx-no-undef
+  190:52  error  'Layout' is not defined        react/jsx-no-undef
+  195:53  error  'Server' is not defined        react/jsx-no-undef
+  200:54  error  'Database' is not defined      react/jsx-no-undef
+  205:52  error  'Smartphone' is not defined    react/jsx-no-undef
+  340:12  error  'Link' is not defined          react/jsx-no-undef
+
+C:\Develop\makeup-hp\src\app\service\sales\page.tsx
+   3:10  warning  'Header' is defined but never used        @typescript-eslint/no-unused-vars
+   4:10  warning  'Footer' is defined but never used        @typescript-eslint/no-unused-vars
+   9:28  warning  'TrendingUp' is defined but never used    @typescript-eslint/no-unused-vars
+  10:28  warning  'PieChart' is defined but never used      @typescript-eslint/no-unused-vars
+  11:3   warning  'Briefcase' is defined but never used     @typescript-eslint/no-unused-vars
+  13:10  warning  'getImagePath' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Develop\makeup-hp\src\app\services\page.tsx
+  3:10  warning  'Header' is defined but never used        @typescript-eslint/no-unused-vars
+  4:10  warning  'Footer' is defined but never used        @typescript-eslint/no-unused-vars
+  5:47  warning  'PenTool' is defined but never used       @typescript-eslint/no-unused-vars
+  5:56  warning  'CheckCircle' is defined but never used   @typescript-eslint/no-unused-vars
+  9:10  warning  'getImagePath' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Develop\makeup-hp\src\components\layout\Header.tsx
+   16:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Develop\makeup-hp\src\components\layout\Header.tsx:16:5
+  14 |
+  15 |   useEffect(() => {
+> 16 |     setIsOpen(false);
+     |     ^^^^^^^^^ Avoid calling setState() directly within an effect
+  17 |   }, [pathname]);
+  18 |
+  19 |   return (  react-hooks/set-state-in-effect
+   27:10  error  'Link' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/jsx-no-undef
+   28:12  error  'Image' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react/jsx-no-undef
+   40:14  error  'Link' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/jsx-no-undef
+   53:12  error  'Link' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/jsx-no-undef
+   68:14  error  'X' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      react/jsx-no-undef
+   70:14  error  'Menu' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/jsx-no-undef
+   75:10  error  'AnimatePresence' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react/jsx-no-undef
+   77:14  error  'motion' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react/jsx-no-undef
+   86:20  error  'motion' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react/jsx-no-undef
+   92:22  error  'Link' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/jsx-no-undef
+   98:24  error  'ChevronRight' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react/jsx-no-undef
+  102:18  error  'motion' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react/jsx-no-undef
+  108:20  error  'Link' is not defined                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   react/jsx-no-undef
+
+笨・116 problems (94 errors, 22 warnings)
+
