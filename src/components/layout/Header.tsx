@@ -41,7 +41,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="relative z-50 flex items-center gap-3 group">
           <Image
-            src={"/images/logo.png"}
+            src={getImagePath("/images/logo.png")}
             alt="株式会社メイクアップ"
             width={240}
             height={80}
