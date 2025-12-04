@@ -8,6 +8,7 @@ import {
   Layout, Server, Smartphone, Shield, Zap,
   BarChart, ShoppingCart, Users, Layers, Package
 } from "lucide-react";
+import { getImagePath } from "@/lib/utils";
 
 export default function DevelopmentPage() {
   return (
@@ -16,7 +17,7 @@ export default function DevelopmentPage() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-dev-jp.jpg"
+            src={getImagePath("/images/hero-dev-jp.jpg")}
             alt="WEBシステム開発"
             fill
             className="object-cover opacity-60"
@@ -86,7 +87,7 @@ export default function DevelopmentPage() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
               <Image
-                src="/images/dev-team-jp.jpg"
+                src={getImagePath("/images/dev-team-jp.jpg")}
                 alt="開発チームの協働作業"
                 width={1200}
                 height={900}

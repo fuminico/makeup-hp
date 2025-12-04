@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { getImagePath } from "@/lib/utils";
 
 const navigation = [
   { name: "ホーム", href: "/" },
@@ -33,14 +34,14 @@ export const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || isOpen
-          ? "bg-white/95 backdrop-blur-md shadow-md py-3 border-b border-slate-200"
-          : "bg-white/95 backdrop-blur-md shadow-sm py-4 border-b border-slate-100"
+        ? "bg-white/95 backdrop-blur-md shadow-md py-3 border-b border-slate-200"
+        : "bg-white/95 backdrop-blur-md shadow-sm py-4 border-b border-slate-100"
         }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="relative z-50 flex items-center gap-3 group">
           <Image
-            src="/images/logo.png"
+            src={getImagePath("/images/logo.png")}
             alt="株式会社メイクアップ"
             width={240}
             height={80}
@@ -55,8 +56,8 @@ export const Header = () => {
               key={item.name}
               href={item.href}
               className={`text-sm font-medium transition-all duration-300 hover:text-blue-500 relative group ${pathname === item.href
-                  ? "text-blue-600"
-                  : "text-slate-700 hover:text-blue-600"
+                ? "text-blue-600"
+                : "text-slate-700 hover:text-blue-600"
                 }`}
             >
               {item.name}

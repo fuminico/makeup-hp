@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Code, TrendingUp, Users, Video } from "lucide-react";
+import { getImagePath } from "@/lib/utils";
 
 export default function ServicesPage() {
   return (
@@ -12,7 +13,7 @@ export default function ServicesPage() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-services.jpg"
+            src={getImagePath("/images/hero-services.jpg")}
             alt="サービス概要"
             fill
             className="object-cover opacity-60"
@@ -71,7 +72,7 @@ export default function ServicesPage() {
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src="/images/hero-dev-jp.jpg"
+                    src={getImagePath("/images/hero-dev-jp.jpg")}
                     alt="WEBシステム開発"
                     fill
                     className="object-cover"
@@ -121,7 +122,7 @@ export default function ServicesPage() {
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src="/images/hero-sales-jp.jpg"
+                    src={getImagePath("/images/hero-sales-jp.jpg")}
                     alt="営業代行"
                     fill
                     className="object-cover"
@@ -171,7 +172,7 @@ export default function ServicesPage() {
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src="/images/hero-consulting-jp.jpg"
+                    src={getImagePath("/images/hero-consulting-jp.jpg")}
                     alt="コンサルティング"
                     fill
                     className="object-cover"
@@ -221,7 +222,7 @@ export default function ServicesPage() {
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src="/images/hero-content-jp.jpg"
+                    src={getImagePath("/images/hero-content-jp.jpg")}
                     alt="コンテンツ制作"
                     fill
                     className="object-cover"
