@@ -85,15 +85,12 @@ export default function ContactPage() {
                 お問い合わせ
               </h1>
               <p className="text-slate-600">
-                下記フォームをご入力のうえ送信してください。メールクライアントが開きますので、そのまま送信をお願いします。
-              </p>
-              <p className="text-slate-500 text-sm mt-2">
-                送信先・返信先: {CONTACT_EMAIL}
+                下記フォームをご入力のうえ送信してください。送信ボタンを押すとメールアプリが起動し、入力内容が挿入された下書きが生成されます。
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl border border-slate-100 p-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white rounded-2xl shadow-xl border border-slate-100 p-8">
                 <h2 className="text-2xl font-bold text-slate-900 mb-6">お問い合わせフォーム</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -197,7 +194,7 @@ export default function ContactPage() {
 
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                     <p className="text-sm text-slate-500">
-                      送信ボタンを押すとメールアプリが起動し、{CONTACT_EMAIL}宛てに下書きが生成されます。
+                      送信ボタンを押すとメールアプリが起動し、宛先・件名・本文が挿入された下書きが生成されます。
                     </p>
                     <button
                       type="submit"
@@ -209,20 +206,6 @@ export default function ContactPage() {
                     </button>
                   </div>
                 </form>
-              </div>
-
-              <div className="bg-white rounded-2xl shadow-xl border border-slate-100 p-8 space-y-6">
-                <h3 className="text-xl font-bold text-slate-900">メールでのお問い合わせ</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  こちらのメールアドレス宛てに直接ご連絡いただくことも可能です。お問い合わせ後の連絡も同じアドレスからお送りします。
-                </p>
-                <div className="p-4 rounded-lg border border-slate-200 bg-slate-50">
-                  <p className="font-mono text-sm text-slate-800">{CONTACT_EMAIL}</p>
-                </div>
-                <div className="space-y-2 text-sm text-slate-600">
-                  <p>・受付後、担当者よりメールでご連絡いたします。</p>
-                  <p>・内容確認のため、お時間をいただく場合があります。</p>
-                </div>
               </div>
             </div>
           </div>
