@@ -24,7 +24,7 @@ export default function ConsultingPage() {
             className="object-cover opacity-60"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-b from-slate-900/60 via-slate-900/30 to-white" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/30 to-white" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center">
@@ -38,7 +38,7 @@ export default function ConsultingPage() {
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-white tracking-tight leading-tight">
               経営の「迷い」を、<br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-teal-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">
                 「確信」に変える
               </span>
             </h1>
@@ -241,6 +241,131 @@ export default function ConsultingPage() {
               <li className="flex items-center gap-2 text-slate-700"><CheckCircle size={18} className="text-orange-500" /> RPA導入・DX推進支援</li>
               <li className="flex items-center gap-2 text-slate-700"><CheckCircle size={18} className="text-orange-500" /> マニュアル作成・標準化</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* ワークショップセクション */}
+      <section className="py-24 bg-gradient-to-br from-slate-50 to-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+              参加型ワークショップで現場を巻き込む
+            </h2>
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+              理論だけでなく、実践的なワークショップを通じて、社員の主体性を引き出します
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <Image
+                src={getImagePath("/images/consulting-workshop-discussion-jp.jpg")}
+                alt="コンサルティングワークショップ"
+                width={800}
+                height={600}
+                className="w-full h-auto"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-bold mb-6 text-slate-900">
+                現場主導の課題解決
+              </h3>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <Lightbulb className="text-emerald-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">インタラクティブなディスカッション</h4>
+                    <p className="text-slate-600">
+                      一方的な講義ではなく、参加者全員が意見を出し合い、課題を共有します。
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <Target className="text-emerald-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">具体的なアクションプラン</h4>
+                    <p className="text-slate-600">
+                      ワークショップの最後には、実行可能なアクションプランを策定します。
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-emerald-100 flex items-center justify-center">
+                    <Users className="text-emerald-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">チームビルディング</h4>
+                    <p className="text-slate-600">
+                      部門を超えた協働により、組織全体の一体感を醸成します。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* さらに詳しく知る */}
+      <section className="py-24 bg-gradient-to-br from-emerald-50 via-white to-slate-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+              さらに詳しく知る
+            </h2>
+            <p className="text-slate-600 text-lg">
+              より具体的な内容や事例をご紹介します
+            </p>
+          </motion.div>
+
+          <div className="max-w-2xl mx-auto">
+            <Link href="/service/consulting/details">
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="group p-8 bg-white rounded-2xl border-2 border-emerald-200 hover:border-emerald-400 hover:shadow-xl transition-all"
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-3 text-slate-900">
+                      コンサルティングサービスの詳細
+                    </h3>
+                    <p className="text-slate-600 mb-4 leading-relaxed">
+                      3段階コンサルティングアプローチの全容、業界別の成功事例、
+                      成果を出すための独自の仕組みを詳しく解説します。
+                    </p>
+                    <span className="inline-flex items-center gap-2 text-emerald-600 font-semibold">
+                      詳細ページを見る
+                      <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
           </div>
         </div>
       </section>

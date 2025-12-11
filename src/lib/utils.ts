@@ -11,7 +11,8 @@ export function cn(...inputs: ClassValue[]) {
  * @returns The full path with basePath if in production
  */
 export function getImagePath(path: string): string {
-  const basePath = '/makeup-hp';
+  // Only use basePath in production (GitHub Pages)
+  const basePath = process.env.NODE_ENV === 'production' ? '/makeup-hp' : '';
   // Ensure path starts with /
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   return `${basePath}${normalizedPath}`;

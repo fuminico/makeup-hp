@@ -24,7 +24,7 @@ export default function ContentPage() {
             className="object-cover opacity-60"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-b from-slate-900/60 via-slate-900/30 to-white" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/30 to-white" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center">
@@ -38,7 +38,7 @@ export default function ContentPage() {
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-white tracking-tight leading-tight">
               心を動かし、<br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-orange-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-orange-400">
                 行動を変える
               </span>
               クリエイティブ
@@ -251,6 +251,131 @@ export default function ContentPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 動画制作セクション */}
+      <section className="py-24 bg-gradient-to-br from-slate-50 to-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+              プロフェッショナルな動画制作
+            </h2>
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+              企画からカット撮影、編集まで、一貫した動画制作サービスを提供します
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <Image
+                src={getImagePath("/images/content-video-production-jp.jpg")}
+                alt="動画制作"
+                width={800}
+                height={600}
+                className="w-full h-auto"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-bold mb-6 text-slate-900">
+                ブランドを伝える映像表現
+              </h3>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center">
+                    <Video className="text-pink-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">企業PV・ブランドムービー</h4>
+                    <p className="text-slate-600">
+                      企業の理念やブランドストーリーを感動的に伝える映像を制作します。
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center">
+                    <Play className="text-pink-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">商品紹介・サービス説明動画</h4>
+                    <p className="text-slate-600">
+                      製品の魅力を分かりやすく伝え、購買意欲を高める動画を制作します。
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-pink-100 flex items-center justify-center">
+                    <Share2 className="text-pink-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">SNS向けショート動画</h4>
+                    <p className="text-slate-600">
+                      TikTok、Instagram Reelsなど、SNSに最適化した動画を制作します。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* さらに詳しく知る */}
+      <section className="py-24 bg-gradient-to-br from-pink-50 via-white to-slate-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+              さらに詳しく知る
+            </h2>
+            <p className="text-slate-600 text-lg">
+              より具体的な内容や事例をご紹介します
+            </p>
+          </motion.div>
+
+          <div className="max-w-2xl mx-auto">
+            <Link href="/service/content/details">
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="group p-8 bg-white rounded-2xl border-2 border-pink-200 hover:border-pink-400 hover:shadow-xl transition-all"
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-3 text-slate-900">
+                      コンテンツ制作サービスの詳細
+                    </h3>
+                    <p className="text-slate-600 mb-4 leading-relaxed">
+                      クリエイティブプロセスの全容、制作実績とポートフォリオ、
+                      多様なクリエイティブ対応とクリエイターの専門性を詳しく解説します。
+                    </p>
+                    <span className="inline-flex items-center gap-2 text-pink-600 font-semibold">
+                      詳細ページを見る
+                      <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
           </div>
         </div>
       </section>

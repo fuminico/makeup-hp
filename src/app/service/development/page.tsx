@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import {
   ArrowRight, Code, CheckCircle, BarChart, Globe,
   ShoppingCart, Layout, Server, Database, Smartphone,
-  Users, Shield, Zap
+  Users, Shield, Zap, Cloud
 } from "lucide-react";
 import { getImagePath } from "@/lib/utils";
 
@@ -25,7 +25,7 @@ export default function DevelopmentPage() {
             className="object-cover opacity-60"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-b from-slate-900/50 via-slate-900/20 to-white" />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/20 to-white" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10 text-center">
@@ -39,7 +39,7 @@ export default function DevelopmentPage() {
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-white tracking-tight leading-tight">
               ビジネスの進化を加速させる<br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
                 堅牢で柔軟なシステム基盤
               </span>
             </h1>
@@ -293,6 +293,131 @@ export default function DevelopmentPage() {
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* アーキテクチャ設計セクション */}
+      <section className="py-24 bg-gradient-to-br from-slate-50 to-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+              堅牢なシステムアーキテクチャ
+            </h2>
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+              スケーラブルで保守性の高いアーキテクチャ設計を重視しています
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <Image
+                src={getImagePath("/images/dev-system-architecture-jp.jpg")}
+                alt="システムアーキテクチャ設計"
+                width={800}
+                height={600}
+                className="w-full h-auto"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-2xl font-bold mb-6 text-slate-900">
+                将来を見据えた設計思想
+              </h3>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                    <Code className="text-blue-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">マイクロサービスアーキテクチャ</h4>
+                    <p className="text-slate-600">
+                      システムを独立したサービスに分割し、柔軟な拡張と保守を実現します。
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                    <Cloud className="text-blue-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">クラウドネイティブ設計</h4>
+                    <p className="text-slate-600">
+                      AWS、GCP、Azureなどのクラウドサービスを最大限活用し、高可用性を確保します。
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <div className="shrink-0 w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                    <Database className="text-blue-600" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-2">最適なデータベース選定</h4>
+                    <p className="text-slate-600">
+                      データの性質に応じて、RDB、NoSQL、キャッシュなどを適切に組み合わせます。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* さらに詳しく知る */}
+      <section className="py-24 bg-gradient-to-br from-blue-50 via-white to-slate-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+              さらに詳しく知る
+            </h2>
+            <p className="text-slate-600 text-lg">
+              より具体的な内容や事例をご紹介します
+            </p>
+          </motion.div>
+
+          <div className="max-w-2xl mx-auto">
+            <Link href="/service/development/details">
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="group p-8 bg-white rounded-2xl border-2 border-blue-200 hover:border-blue-400 hover:shadow-xl transition-all"
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-3 text-slate-900">
+                      WEBシステム開発サービスの詳細
+                    </h3>
+                    <p className="text-slate-600 mb-4 leading-relaxed">
+                      技術スタックの選定基準、アジャイル開発プロセス、実際のプロジェクト実績、
+                      品質保証とセキュリティへの取り組みを詳しく解説します。
+                    </p>
+                    <span className="inline-flex items-center gap-2 text-blue-600 font-semibold">
+                      詳細ページを見る
+                      <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
+          </div>
         </div>
       </section>
 
