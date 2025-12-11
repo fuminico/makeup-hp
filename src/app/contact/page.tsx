@@ -28,6 +28,7 @@ export default function ContactPage() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -36,15 +37,53 @@ export default function ContactPage() {
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
     setSubmitting(true);
-    // 実際の送信は行わず、サクセスメッセージのみ表示
-    setTimeout(() => {
+    setSuccess(false);
+
+    if (!FORM_ENDPOINT) {
+      setError("送信先の設定が不足しています。管理者にお問い合わせください。");
       setSubmitting(false);
+      return;
+    }
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          company: form.company,
+          budget: form.budget,
+          message: form.message,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error("送信に失敗しました。時間をおいて再度お試しください。");
+      }
+
       setSuccess(true);
-    }, 400);
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        budget: "",
+        message: "",
+      });
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "送信に失敗しました。");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
