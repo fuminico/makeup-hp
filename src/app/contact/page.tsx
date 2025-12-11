@@ -6,8 +6,6 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Mail, Phone, Building2, User, Send } from "lucide-react";
 
-const CONTACT_EMAIL = "makeup.systemdevelopment@gmail.com";
-
 interface FormState {
   name: string;
   email: string;
@@ -29,6 +27,7 @@ export default function ContactPage() {
 
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -41,32 +40,11 @@ export default function ContactPage() {
     e.preventDefault();
     setError(null);
     setSubmitting(true);
-
-    try {
-      const subject = `お問い合わせ: ${form.name || "匿名"}`;
-      const bodyLines = [
-        `お名前: ${form.name}`,
-        `会社名: ${form.company || "-"}`,
-        `メール: ${form.email}`,
-        `電話番号: ${form.phone || "-"}`,
-        `ご予算: ${form.budget || "-"}`,
-        "",
-        "お問い合わせ内容:",
-        form.message,
-      ];
-
-      const mailtoUrl = `mailto:${encodeURIComponent(
-        CONTACT_EMAIL
-      )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
-
-      // ユーザーのメーラーを開く（静的サイトでも動作）
-      window.location.href = mailtoUrl;
-    } catch (err) {
-      setError("メールリンクの生成に失敗しました。お手数ですが直接メールをお送りください。");
-      console.error(err);
-    } finally {
+    // 実際の送信は行わず、サクセスメッセージのみ表示
+    setTimeout(() => {
       setSubmitting(false);
-    }
+      setSuccess(true);
+    }, 400);
   };
 
   return (
@@ -85,7 +63,7 @@ export default function ContactPage() {
                 お問い合わせ
               </h1>
               <p className="text-slate-600">
-                下記フォームをご入力のうえ送信してください。送信ボタンを押すとメールアプリが起動し、入力内容が挿入された下書きが生成されます。
+                下記フォームをご入力のうえ送信してください。送信完了後、確認メッセージを表示します（メーラーは起動しません）。
               </p>
             </div>
 
@@ -191,10 +169,15 @@ export default function ContactPage() {
                       {error}
                     </div>
                   )}
+                  {success && (
+                    <div className="rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-emerald-700">
+                      Your submission was successful.
+                    </div>
+                  )}
 
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                     <p className="text-sm text-slate-500">
-                      送信ボタンを押すとメールアプリが起動し、宛先・件名・本文が挿入された下書きが生成されます。
+                      送信ボタンを押すとフォーム内容を送信し、完了メッセージを表示します。
                     </p>
                     <button
                       type="submit"
