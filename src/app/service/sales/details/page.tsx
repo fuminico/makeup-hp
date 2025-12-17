@@ -1,7 +1,5 @@
 "use client";
 
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { Highlight } from "@/components/ui/Highlight";
 import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import Image from "next/image";
@@ -12,9 +10,7 @@ import { getImagePath } from "@/lib/utils";
 
 export default function SalesDetailsPage() {
   return (
-    <div className="bg-white min-h-screen">
-      <Header />
-
+    <>
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-900 to-purple-700">
         <div className="absolute inset-0 z-0">
@@ -752,7 +748,6 @@ export default function SalesDetailsPage() {
         </div>
       </section>
 
-      <Footer />
-    </div>
+    </>
   );
 }
